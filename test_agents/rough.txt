@@ -1,0 +1,31 @@
+
+schemass:
+
+1. orders
+   - id (uuid, PK)
+   - purchase_order_id (varchar, unique)
+   - order_date (date)
+   - buyer_name (varchar)
+   - buyer_address (text)
+   - supplier_name (varchar)
+   - supplier_address (text)
+   - currency (varchar, default 'USD')
+   - tax_amount (numeric)
+   - total_amount (numeric)
+   - created_at (timestamp)
+   - updated_at (timestamp)
+   - completed (boolean, default false)
+   
+2. line_items
+   - id (uuid, PK)
+   - order_id (uuid, FK -> orders.id)
+   - model_id (varchar)
+   - item_code (varchar)
+   - description (text)
+   - color (varchar)
+   - size (varchar)
+   - quantity (integer)
+   - unit_price (numeric)
+   - amount (numeric)
+   - delivery_date (date)
+   - created_at (timestamp)

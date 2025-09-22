@@ -1,0 +1,9 @@
+# Core dependencies for final_multi_agent.py
+phidata>=2.0.0
+openai>=1.0.0
+psycopg[binary]>=3.0.0
+pgvector>=0.2.0
+sqlalchemy>=2.0.0
+
+# Additional dependencies that might be needed
+pypdf>=3.0.0
